@@ -60,7 +60,7 @@ header {
 
 @media screen and (max-width: 800px) {
   .navbar-brand span {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 /* Video Presentación */
@@ -81,6 +81,19 @@ header {
   font-family: "Great Vibes", cursive;
 }
 
+.fondo-texto h2::after {
+  content: "Benvenuto";
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  40% {
+    content: "Bienvenido";
+  }
+  70% {
+    content: "Welcome";
+  }
+}
 video {
   width: 100%;
   height: 100%;
@@ -100,6 +113,11 @@ main {
   position: relative;
 }
 
+@media screen and (max-width: 800px) {
+  .fondo-texto h2 {
+    font-size: 40px;
+  }
+}
 /* Opiniones */
 .testimonios_header h2 {
   margin: 1em auto;
